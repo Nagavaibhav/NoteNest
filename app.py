@@ -382,6 +382,5 @@ def create_app(test_config: dict[str, Any] | None = None) -> Flask:
 app = create_app()
 
 if __name__ == "__main__":
-    # Port 5000 is commonly occupied by macOS system services over IPv6.
-    # A dedicated IPv4 port avoids browser requests being sent to that service.
+    
     app.run(host="127.0.0.1", port=5000, debug=True)
